@@ -1,0 +1,530 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+/* HEADER INÍCIO */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 245, 65);
+  height:100px;
+  padding:10px;
+}
+
+.header img {
+  width: 100px;
+  height: auto; 
+  margin-right: 10px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact-info h2 {
+  margin-right: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+.contact-item p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact-item p, h2{
+  color:rgb(31, 31, 248);
+}
+
+.contact-item img {
+  width: 25px;
+  height: auto; 
+  margin-right: 5px;
+}
+
+
+/* HEADER FIM */
+
+/* MENU NAV INÍCIO */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 245, 65);
+  height: 100px;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact-info h2 {
+  margin-right: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item p,
+h2 {
+  color: rgb(31, 31, 248);
+}
+
+.contact-item img {
+  width: 25px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.main-nav {
+  background-color: rgb(31, 31, 248);
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-list li {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+}
+
+.nav-list li a{
+  list-style: none;
+  text-decoration: none;
+  color:#fff;
+  font-size: 18px;
+}
+.nav-list li a:hover{
+  transition: .4s;
+  color: #aaa6a6;
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE INÍCIO */
+
+/* Estilos específicos para telas com largura menor que 760px */
+@media screen and (max-width: 760px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .header img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .contact-info h2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .contact-item {
+    margin-bottom: 10px;
+  }
+  .contact-item .email-contato{
+    font-size: 18px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+    .contact-item p {
+      font-size: 16px;
+  }
+}
+
+/* RESPONSIVIDADE FIM */
+
+/* MENU NAV FIM */
+
+
+/* PROPOSTA  */
+
+.proposta-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.proposta-text {
+  flex: 1;
+}
+
+.proposta-text h2 {
+  font-size: 28px;
+  font-weight:bolder;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.proposta-text p {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.proposta-image {
+  flex: 1;
+  text-align: right;
+  border: 8px solid yellow;
+  border-radius: 10px;
+  overflow: hidden; 
+  display: flex;
+}
+
+.proposta-image img {
+  width: 100%; 
+  object-fit: cover; 
+  height: auto; 
+}
+
+/* REPOSNSIVIDADE */
+@media screen and (max-width: 760px) {
+  .proposta-section {
+    flex-direction: column; /* Alinhar os elementos verticalmente */
+    align-items: center; /* Centralizar os elementos verticalmente */
+  }
+
+  .proposta-text h2 {
+    font-size: 24px;
+  }
+
+  .proposta-text p {
+    font-size: 20px;
+  }
+
+  .proposta-image {
+    margin-top: 10px; /* Reduzir o espaço entre o texto e a imagem */
+  }
+}
+
+/* QUEM SOMOS */
+.quem-somos-section, .fundadores-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.quem-somos-content, .fundadores-content {
+  flex: 1;
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+
+.quem-somos-content h2, .fundadores-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.quem-somos-content p, .fundadores-content p {
+  font-size: 32px;
+  line-height: 1.6;
+}
+
+.quem-somos-image, .fundadores-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+}
+
+.quem-somos-image img, .fundadores-image img {
+  max-width: 70%;
+  max-height: 300px;
+  object-fit: cover;
+  border: 8px solid blue;
+  border-radius: 10px; 
+}
+.quem-somos-image img, .logo-img img {
+  width: 80%; 
+  max-height: 300px; 
+  object-fit: cover; 
+  border: 8px solid blue; 
+  border-radius: 10px; 
+}
+
+
+.fundadores-image {
+  margin-right: 20px; 
+}
+
+/* NOSSOS CURSOS */
+.nossos-cursos-title{
+  text-align: center;
+  color:#029b02;
+}
+.curso-title{
+  text-align: center;
+  margin:20px;
+  color:blue;
+  font-size: 20px;
+}
+.bercario-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 3px;
+  text-align: center; 
+  padding:30px;
+}
+
+.bercario-section h3 {
+  grid-column: 1 / -1; 
+  margin-bottom: 10px;
+}
+
+.bercario-section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Posicionamento das fotos */
+.bercario1 { grid-area: 1 / 1 / 2 / 2; }
+.bercario2 { grid-area: 1 / 2 / 2 / 3; }
+.bercario3 { grid-area: 1 / 3 / 2 / 4; }
+.bercario4 { grid-area: 2 / 1 / 3 / 2; }
+.bercario5 { grid-area: 2 / 2 / 3 / 3; }
+.bercario6 { grid-area: 2 / 3 / 3 / 4; }
+
+/* MATERNAL */
+.maternal1-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  grid-gap: 10px;
+  text-align: center; 
+  padding:30px;
+}
+
+.maternal1-section img {
+  width: 100%;
+  height: 100%;
+}
+/* Maternal II */
+.maternal-section {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap;
+  padding:30px;
+}
+
+.maternal-section img {
+  width: calc(25% - 10px); 
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+
+@media screen and (max-width: 480px) {
+  .maternal-section img {
+    width: calc(50% - 10px); 
+  }
+}
+
+/* PRÉ I */
+.curso-grid-pré {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+  grid-gap: 10px; 
+  text-align: center; 
+  padding:30px;
+}
+
+.curso-grid-pré img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+
+.curso-grid-pré img:nth-child(3) {
+  grid-row: 1 / span 2;
+}
+
+/* PRÉ II */
+.curso-grid-pre2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; 
+  padding:30px;
+}
+
+.curso-grid-pre2 img {
+  width: calc(33.33% - 10px); 
+  height: auto;
+}
+
+/* 1° ANO */
+.curso-grid-ano1 {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px; 
+  text-align: center; 
+  padding:30px;
+}
+
+.curso-grid-ano1 img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+/* BALLET */
+.curso-title {
+  text-align: center; 
+}
+
+.curso-grid-ballet {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  padding:30px;
+}
+
+.curso-grid-ballet img {
+  width: 50%; 
+  height: auto;
+}
+
+/* TAEWKONDO */
+.curso-grid-fight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; 
+  text-align: center;
+  padding:30px; 
+}
+
+.curso-grid-fight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* MAPA */
+.maps-local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-address, .street-address, .map {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.map {
+  width: 600px; 
+  height: 450px; 
+}
+
+/* EQUIPE */
+.curso-title-equipe{
+  text-align: center;
+  margin:20px;
+  color:#029b02;
+  font-size: 40px;
+}
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:30px;
+}
+.equipe-grid p{
+  color:#029b02;
+}
+
+.equipe-item {
+  text-align: center;
+}
+
+.equipe-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 5px solid #3498db;
+}
+
+.equipe-item p {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Ajustar a última linha */
+@media (max-width: 800px) {
+  .equipe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .equipe-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: #2ca2da;
+  padding: 20px;
+  text-align: center;
+}
+
+.instagram-link a {
+  text-decoration: none;
+  color: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram-link img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
