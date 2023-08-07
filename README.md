@@ -1,2 +1,2 @@
 # hebron
-Website created ofor my aunt's school
+Website created for my aunt's school
